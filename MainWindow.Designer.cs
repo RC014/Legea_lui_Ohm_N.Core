@@ -79,7 +79,7 @@ namespace Legea_lui_Ohm
             this.Grafic.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series7.BorderWidth = 4;
             series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series7.Legend = "Legend1";
             series7.Name = "f(U)";
             this.Grafic.Series.Add(series7);

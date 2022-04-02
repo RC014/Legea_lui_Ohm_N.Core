@@ -19,12 +19,14 @@ namespace Legea_lui_Ohm
             tensiuneatb.TickFrequency = 40;
             tensiuneatb.LargeChange = 10;
             tensiuneatb.SmallChange = 1;
+            tensiuneatb.Value = 160;
 
-            rezistentatb.Maximum = 1100;
+            rezistentatb.Maximum = 5100;
             rezistentatb.Minimum = 100;
             rezistentatb.TickFrequency = 100;
             rezistentatb.LargeChange = 10;
             rezistentatb.SmallChange = 1;
+            //rezistentatb.Value = 11000;
         }
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
@@ -46,7 +48,7 @@ namespace Legea_lui_Ohm
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Grafic.Series["f(U)"].Points.AddXY(tensiunetextbox.Text, Math.Round(((float)tensiuneatb.Value / (float)rezistentatb.Value), 1));
+            Grafic.Series["f(U)"].Points.AddXY(Math.Round(((float)tensiuneatb.Value / (float)rezistentatb.Value), 1)*1000, (float)tensiuneatb.Value / 10);
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {

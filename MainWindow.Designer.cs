@@ -63,7 +63,6 @@ namespace Legea_lui_Ohm
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grafic)).BeginInit();
             this.SuspendLayout();
-            // 
             // Grafic
             // 
             this.Grafic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -83,23 +82,9 @@ namespace Legea_lui_Ohm
             series7.Legend = "Legend1";
             series7.Name = "f(U)";
             this.Grafic.Series.Add(series7);
-            this.Grafic.Size = new System.Drawing.Size(1200, 670-8);
+            this.Grafic.Size = new System.Drawing.Size(1200, 670 - 8);
             this.Grafic.TabIndex = 12;
             this.Grafic.Text = "chart1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(636, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 308 + 8);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // tensiunetextbox
             // 
@@ -275,6 +260,20 @@ namespace Legea_lui_Ohm
             this.schema.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.schema.TabIndex = 24;
             this.schema.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(636, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1200, 308);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
@@ -461,4 +460,3 @@ namespace Legea_lui_Ohm
         private System.Windows.Forms.Label label11;
     }
 }
-
